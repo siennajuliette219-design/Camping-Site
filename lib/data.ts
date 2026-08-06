@@ -463,25 +463,41 @@ export const testimonials: Testimonial[] = [
   {
     id: '1',
     quote:
-      'First time ko mag-camp and sobrang sulit. Our barkada went to the Starfield Site in Tanay and woke up to full Sierra Madre views at sunrise.',
-    author: 'Marco Santos',
-    location: 'Tanay Camp',
+      'We enjoyed our two-night stay at Tanay Windmills Viewpoint. It was peaceful, and the weather was refreshing as we camped under the mango trees.',
+    author: 'Camp Vibes PH',
+    location: 'Tanay Windmills Viewpoint',
     rating: 5,
   },
   {
     id: '2',
     quote:
-      'Brought our barkada to the Coffee Grove Site in Amadeo. Super clean grounds, the staff were so nice, and the views were gorgeous.',
-    author: 'Pia Reyes',
-    location: 'Amadeo Camp',
+      'A tranquil experience. They have very friendly and accommodating staff. The whole camp area is quite big and could put up a lot of campers at the same time. It is also easy to get to. We will definitely come back.',
+    author: 'Ronan Israel Ramos',
+    location: 'Tanay Windmills Viewpoint',
     rating: 5,
   },
   {
     id: '3',
     quote:
-      'We used the Meadow Group Site for our office outing. All 30 of us had a blast with tons of space and a big firepit.',
-    author: 'Jun dela Cruz',
-    location: 'Amadeo Camp',
+      'Camping at Tanay Windmills Viewpoint always brings me peace—the rustling leaves, the steady breeze, the cool air, and the gentle sounds of nature remind me how simple and beautiful the world can be.',
+    author: 'Elaine Perete',
+    location: 'Tanay Windmills Viewpoint',
+    rating: 5,
+  },
+  {
+    id: '4',
+    quote:
+      "It's a Yay! Well-maintained camping ground with lots of trees, so it doesn't get too hot at noon. The soil is soft and not rocky, perfect for pitching tents. Fenced and gated with 10/10 security. Very chill stay—we'll definitely be back.",
+    author: 'Wigo Wanders',
+    location: 'Tanay Windmills Viewpoint',
+    rating: 5,
+  },
+  {
+    id: '5',
+    quote:
+      "Thanks for the very pleasant and good accommodation, nag-enjoy po kami. We'll visit soon again. Godbless, keep it up!",
+    author: 'Sky Averie',
+    location: 'Tanay Windmills Viewpoint',
     rating: 5,
   },
 ]
