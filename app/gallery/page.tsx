@@ -5,14 +5,14 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 const galleryImages = [
-  { src: "/images/hero-airstream.jpg", alt: "Hilltop campsite at Tanay Windmills Viewpoint", category: "Campgrounds" },
-  { src: "/images/campfire.jpg", alt: "Bonfire night at camp", category: "Camp Life" },
-  { src: "/images/family-reunion.jpg", alt: "Group camping gathering", category: "Groups" },
+  { src: "/images/tanay-windmills-camp.png", alt: "Hilltop campsite beside the wind turbines at Tanay Windmills Viewpoint", category: "Tanay" },
+  { src: "/images/about-filipino-campfire.png", alt: "Campers around a firepit at dusk", category: "Camp Life" },
+  { src: "/images/filipino-family-camp.png", alt: "Family and barkada group camping on the grounds", category: "Groups" },
+  { src: "/images/amadeo-coffee-camp.png", alt: "Coffee-farm campsite in the Amadeo hills", category: "Amadeo" },
+  { src: "/images/amadeo-firepit-night.png", alt: "Firepit night at the Amadeo coffee-farm camp", category: "Amadeo" },
+  { src: "/images/amadeo-coffee-morning.png", alt: "Misty morning barako coffee at the Amadeo camp", category: "Amadeo" },
+  { src: "/images/campfire.jpg", alt: "Bonfire night under the mango trees", category: "Camp Life" },
   { src: "/images/dining.jpg", alt: "Camp dining and coffee", category: "Cafe" },
-  { src: "/images/asheville.jpg", alt: "Highland landscape", category: "Views" },
-  { src: "/images/sonoma.jpg", alt: "Coffee country camp atmosphere", category: "Amadeo" },
-  { src: "/images/yosemite.jpg", alt: "Mountain and nature views", category: "Nearby Nature" },
-  { src: "/images/catskills.jpg", alt: "Tree-lined outdoor setting", category: "Orchard" },
 ]
 
 export default function GalleryPage() {

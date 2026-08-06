@@ -6,8 +6,8 @@ import { locations } from '@/lib/data'
 import { ArrowRight } from 'lucide-react'
 
 export const metadata = {
-  title: 'About | Windmills Camp Grounds',
-  description: 'Learn about Windmills Camp Grounds, a BYOT camping destination in Tanay, Rizal and Amadeo, Cavite.',
+  title: 'About | Windmills Viewpoint Camps',
+  description: 'Learn about Windmills Viewpoint Camps, a BYOT camping destination in Tanay, Rizal and Amadeo, Cavite.',
 }
 
 export default function AboutPage() {
@@ -16,7 +16,7 @@ export default function AboutPage() {
       <Header />
 
       <section className="relative h-[60vh] min-h-[420px]">
-        <Image src="/images/campfire.jpg" alt="Evening at Windmills Camp Grounds" fill className="object-cover" priority />
+        <Image src="/images/about-filipino-campfire.png" alt="Filipino campers gathered around a campfire at Windmills Viewpoint Camps" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/30 to-transparent" />
       </section>
 
@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Windmills Camp Grounds is the go-to camping destination for the modern Filipino adventurer: close enough to Metro Manila, yet worlds away the moment you arrive. It is built for barkada getaways, family reunion weekends, school trips, and corporate office outings.
+                Windmills Viewpoint Camps is the go-to camping destination for the modern Filipino adventurer: close enough to Metro Manila, yet worlds away the moment you arrive. It is built for barkada getaways, family reunion weekends, school trips, and corporate office outings.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mt-5">
                 We provide the grounds, scenery, fire areas, parking, and facilities. Campers bring the tent, the crew, and the good vibes.

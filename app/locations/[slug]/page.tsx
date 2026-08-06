@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${location.name} | Windmills Camp Grounds`,
+    title: `${location.name} | Windmills Viewpoint Camps`,
     description: location.description,
   }
 }

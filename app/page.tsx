@@ -32,7 +32,7 @@ export default function Home() {
       <Header transparent />
 
       <section className="relative h-screen min-h-[720px]">
-        <Image src="/images/hero-airstream.jpg" alt="Tanay Windmills Viewpoint campsite" fill className="object-cover" priority />
+        <Image src="/images/tanay-windmills-camp.png" alt="Tanay Windmills Viewpoint campsite" fill className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/20 to-foreground/70" />
         <div className="absolute inset-x-0 top-32 px-4">
           <div className="max-w-7xl mx-auto text-primary-foreground">
