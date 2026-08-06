@@ -128,7 +128,6 @@ export const locations: Location[] = [
       'Batlag Falls',
       'Calinawan Cave',
       'Masungi Georeserve',
-      'Treasure Mountain',
       'Tara sa Gulod',
     ],
     accommodationTypes: [
@@ -419,7 +418,6 @@ export const nearbyAttractions = [
   { name: 'Pupot Cave and Spring', time: '34 mins away', distance: '15.4 km' },
   { name: 'Paglitaw Natural Pool', time: '39 mins away', distance: '16.7 km' },
   { name: 'Masungi Georeserve', time: '34 mins away', distance: '22.1 km' },
-  { name: 'Treasure Mountain', time: '35 mins away', distance: '18.1 km' },
   { name: 'El Patio Razon', time: '34 mins away', distance: '18.2 km' },
   { name: 'San Ildefonso de Toledo Parish', time: '34 mins away', distance: '18.7 km' },
   { name: 'Tara sa Gulod', time: '34 mins away', distance: '14.3 km' },
