@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { GalleryLightbox } from '@/components/gallery-lightbox'
@@ -38,12 +39,23 @@ export default function GalleryPage() {
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid min-w-0 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {influencerFeatures.map((feature) => (
-              <article key={feature.id} className="flex min-h-44 flex-col justify-between border border-border bg-background p-6">
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-muted-foreground">Creator</p>
-                  <h3 className="mt-2 text-2xl font-serif">{feature.creator}</h3>
+              <article key={feature.id} className="flex min-h-48 min-w-0 flex-col justify-between border border-border bg-background p-6">
+                <div className="flex items-center gap-4">
+                  <div className="relative size-20 shrink-0 overflow-hidden rounded-full border border-border bg-secondary">
+                    <Image
+                      src={feature.profileImage}
+                      alt={feature.profileImageAlt}
+                      fill
+                      sizes="80px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground">Creator</p>
+                    <h3 className="mt-2 break-words text-2xl font-serif leading-tight text-balance">{feature.creator}</h3>
+                  </div>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-3">
                   {feature.links.map((link, index) => {

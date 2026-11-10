@@ -5,22 +5,28 @@ import type { NearbyAttraction } from '@/lib/data'
 interface NearbyAttractionsGridProps {
   attractions: NearbyAttraction[]
   limit?: number
+  compact?: boolean
 }
 
-export function NearbyAttractionsGrid({ attractions, limit }: NearbyAttractionsGridProps) {
+export function NearbyAttractionsGrid({ attractions, limit, compact = false }: NearbyAttractionsGridProps) {
   const visibleAttractions = typeof limit === 'number' ? attractions.slice(0, limit) : attractions
+  const gridClasses = compact
+    ? 'grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4'
+    : 'grid sm:grid-cols-2 lg:grid-cols-3 gap-5'
 
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div className={gridClasses}>
       {visibleAttractions.map((attraction) => (
-        <article key={attraction.name} className="bg-background border border-border">
+        <article key={attraction.name} className="flex h-full flex-col bg-background border border-border">
           {attraction.image ? (
             <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
               <Image
                 src={attraction.image}
                 alt={attraction.imageAlt || attraction.name}
                 fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                sizes={compact
+                  ? '(min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw'
+                  : '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw'}
                 className="object-cover"
               />
             </div>
@@ -30,14 +36,14 @@ export function NearbyAttractionsGrid({ attractions, limit }: NearbyAttractionsG
               <span className="text-sm font-medium">Nearby destination</span>
             </div>
           )}
-          <div className="p-4">
+          <div className="flex flex-1 flex-col p-4">
             <h3 className="font-medium text-foreground">{attraction.name}</h3>
             <div className="mt-3 flex items-center justify-between gap-4 text-sm text-muted-foreground">
               <span>{attraction.distance}</span>
               <span className="whitespace-nowrap">{attraction.time}</span>
             </div>
             {attraction.link && (
-              <a href={attraction.link.href} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+              <a href={attraction.link.href} target="_blank" rel="noopener noreferrer" className="mt-auto pt-4 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
                 {attraction.link.label} <ExternalLink className="h-3.5 w-3.5" />
               </a>
             )}

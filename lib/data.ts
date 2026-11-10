@@ -101,6 +101,8 @@ export interface Testimonial {
 export interface InfluencerFeature {
   id: string
   creator: string
+  profileImage: string
+  profileImageAlt: string
   links: Array<{
     platform: 'facebook' | 'youtube'
     href: string
@@ -1006,11 +1008,15 @@ export const influencerFeatures: InfluencerFeature[] = [
   {
     id: 'yats-tv',
     creator: 'Yats TV',
+    profileImage: '/images/creators/yats-tv.jpg',
+    profileImageAlt: 'Yats TV profile picture',
     links: [{ platform: 'facebook', href: 'https://www.facebook.com/share/r/196Vu7D8SV/' }],
   },
   {
     id: 'the-wondering-two-ph',
-    creator: 'thewonderingtwoph',
+    creator: 'thewanderingtwoph',
+    profileImage: '/images/creators/the-wondering-two-ph.jpg',
+    profileImageAlt: 'thewanderingtwoph profile picture',
     links: [
       { platform: 'facebook', href: 'https://www.facebook.com/share/r/14ii9kXhJsj/' },
       { platform: 'facebook', href: 'https://www.facebook.com/share/r/1FDXY8h1Ph/' },
@@ -1019,21 +1025,29 @@ export const influencerFeatures: InfluencerFeature[] = [
   {
     id: 'arki-campin',
     creator: 'Arki Campin',
+    profileImage: '/images/creators/arki-campin.jpg',
+    profileImageAlt: 'Arki Campin YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/C6Y7Rm3VSik?si=tz6Q9w7bRbSQ70xD' }],
   },
   {
     id: 'ed-jhay',
     creator: 'Ed Jhay',
+    profileImage: '/images/creators/ed-jhay.jpg',
+    profileImageAlt: 'Ed Jhay YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/bqI6h5d1yfY?si=Gi6F5coQRsfW78iZ' }],
   },
   {
     id: 'rango-adventures',
     creator: 'Rango Adventures',
+    profileImage: '/images/creators/rango-adventures.jpg',
+    profileImageAlt: 'Rango Adventures YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/igq6x1_QQi8?si=DsAzDPtNg4wdRplL' }],
   },
   {
     id: 'the-nomads',
     creator: 'The Nomads',
+    profileImage: '/images/creators/the-nomads.jpg',
+    profileImageAlt: 'The Nomads profile picture',
     links: [
       { platform: 'facebook', href: 'https://www.facebook.com/share/p/1DrqMDj8xn/' },
       { platform: 'facebook', href: 'https://www.facebook.com/share/r/14cJePqiBJK/' },
@@ -1042,11 +1056,15 @@ export const influencerFeatures: InfluencerFeature[] = [
   {
     id: 'mabs-and-may',
     creator: 'Mabs & May',
+    profileImage: '/images/creators/mabs-and-may.jpg',
+    profileImageAlt: 'Mabs & May YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/ceddFGIEnrg?si=A20TLYfI-xREDSGc' }],
   },
   {
     id: 'bgtv',
     creator: 'BGtv',
+    profileImage: '/images/creators/bgtv.jpg',
+    profileImageAlt: 'BGtv profile picture',
     links: [
       { platform: 'facebook', href: 'https://www.facebook.com/share/v/1Baap1YfAv/' },
       { platform: 'facebook', href: 'https://www.facebook.com/share/r/1Cu1SJVRcT/' },
@@ -1055,11 +1073,15 @@ export const influencerFeatures: InfluencerFeature[] = [
   {
     id: 'unoss-vlog',
     creator: 'Unoss Vlog',
+    profileImage: '/images/creators/unoss-vlog.jpg',
+    profileImageAlt: 'Unoss Vlog YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/ox03ZNtreN4?si=3bKOB2as3I1EU9oM' }],
   },
   {
     id: 'kanoki-adventure',
     creator: 'Kanoki Adventure',
+    profileImage: '/images/creators/kanoki-adventure.jpg',
+    profileImageAlt: 'Kanoki Adventure YouTube profile picture',
     links: [
       { platform: 'facebook', href: 'https://www.facebook.com/share/r/1J7N5XtY6t/' },
       { platform: 'youtube', href: 'https://youtu.be/UZ37S-lQLmw?si=H9tTOADFhBXaweVy' },
@@ -1068,21 +1090,29 @@ export const influencerFeatures: InfluencerFeature[] = [
   {
     id: 'rventures-ph',
     creator: 'Rventures PH',
+    profileImage: '/images/creators/rventures-ph.jpg',
+    profileImageAlt: 'Rventures PH YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/dXIYUZvU_6Y?si=uckHlAsAOIk3dGIs' }],
   },
   {
     id: 'koywenfamily-tv',
     creator: 'KoyWenFamily TV',
+    profileImage: '/images/creators/koywenfamily-tv.jpg',
+    profileImageAlt: 'KoyWenFamily TV YouTube profile picture',
     links: [{ platform: 'youtube', href: 'https://youtu.be/WE54JzgLhSE?si=LaeCxw12SfeR6Kmx' }],
   },
   {
     id: 'lakwatsero-projectlaboy',
     creator: 'Lakwatsero projectlaboy',
+    profileImage: '/images/creators/lakwatsero-projectlaboy.jpg',
+    profileImageAlt: 'Lakwatsero projectlaboy profile picture',
     links: [{ platform: 'facebook', href: 'https://www.facebook.com/share/v/1Awwh3RNge/' }],
   },
   {
     id: 'wanderbeans',
     creator: 'WanderBeans',
+    profileImage: '/images/creators/wanderbeans.jpg',
+    profileImageAlt: 'WanderBeans profile picture',
     links: [{ platform: 'facebook', href: 'https://www.facebook.com/share/r/1B3QRC7Bmn/' }],
   },
 ]

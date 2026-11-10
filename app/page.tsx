@@ -162,15 +162,17 @@ export default function Home() {
       </section>
 
       <section className="py-24 px-4 bg-secondary/30">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-16">
-          <div>
-            <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Nearby Attractions</p>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">Wind farms, waterfalls, caves, and mountain views.</h2>
-            <p className="text-muted-foreground leading-relaxed">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground mb-4">Nearby Attractions</p>
+              <h2 className="text-4xl md:text-5xl font-serif">Wind farms, waterfalls, caves, and mountain views.</h2>
+            </div>
+            <p className="max-w-xl text-muted-foreground leading-relaxed lg:justify-self-end">
               Build a day tour around Tanay favorites, then come back to camp for coffee, sunset, and a firepit night.
             </p>
           </div>
-          <NearbyAttractionsGrid attractions={tanayNearbyAttractions} limit={10} />
+          <NearbyAttractionsGrid attractions={tanayNearbyAttractions} limit={10} compact />
         </div>
       </section>
 
